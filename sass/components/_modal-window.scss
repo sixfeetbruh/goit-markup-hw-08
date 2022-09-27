@@ -1,0 +1,59 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background: var(--primary-bgc-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-submit-button  {
+    @include font(16px, 700, 30px);
+    background-color: var(--accent-color);
+    color: var(--primary-bgc-color);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 52px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-second-color);
+    color: var(--primary-bgc-color);
+  }
+}
+
+.modal-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-bgc-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.modal-close__icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+      fill: var(--accent-color);
+  }
+}

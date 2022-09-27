@@ -1,0 +1,15 @@
+.logo {
+    @include font(26px, 700, 31px);
+    font-family: var(--secondary-font);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    color: var(--primary-title-color);
+}
+
+.web-logo {
+    color: var(--accent-color);
+}
+
+.footer-logo {
+    margin-right: 70px;
+}

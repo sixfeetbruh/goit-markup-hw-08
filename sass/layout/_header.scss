@@ -1,0 +1,113 @@
+.page-header {
+    padding: 10px 0 10px 0;
+}
+
+.menu {
+    display: none;
+}
+
+.contacts {
+    display: none;
+}
+
+.mobile-menu-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// .page-header {
+//     border-bottom: var(--primary-border);
+// }
+
+// .page-header__container {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .page-nav {
+//     display: flex;
+//     align-items: center;
+
+//   .link {
+//     color: var(--primary-title-color);
+//   }
+// }
+
+// .menu {
+//     display: flex;
+//     column-gap: 50px;
+
+//   .link:hover,
+//   .link:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .menu__item {
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+// }
+
+// .contacts {
+//     display: flex;
+//     column-gap: 50px;
+//     margin-left: auto;
+// }
+
+// .menu__link_current.link {
+//   color: var(--accent-color);
+//   height: 100%;
+// }
+
+// .menu__link_current::after {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     background-color: var(--accent-color);
+//     border-radius: 2px;
+//     bottom: 0;
+// }
+
+// .menu__link {
+//     @include font(14px, 500, 16px);
+//     position: relative;
+//     font-family: var(--primary-font);
+//     letter-spacing: 0.02em;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     padding: 32px 0;
+// }
+
+// .contacts__link {
+//     @include font(14px, 500, 16px);
+//     color: var(--primary-text-color);
+//     font-family: var(--primary-font);
+//     letter-spacing: 0.02em;
+//     display: flex;
+//     align-items: center;
+//     fill: currentColor;
+//     padding: 1px 0px;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .icons-header {
+//     margin-right: 10px;
+// }

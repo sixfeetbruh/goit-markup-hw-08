@@ -1,0 +1,21 @@
+.services {
+    padding-bottom: 94px;
+}
+
+.services-block {
+    position: relative;
+}
+
+.services-block__overlay {
+    @include font(14px, 700, 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+    color: var(--primary-bgc-color);
+    background-color: rgba(47, 48, 58, 0.8);;
+}

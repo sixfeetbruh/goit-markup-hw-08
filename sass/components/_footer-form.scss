@@ -1,0 +1,66 @@
+.subscribe__title {
+    @include font(14px, 700, 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.subscribe-form {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: var(--footer-contacts-color);
+    background-color: var(--section-bcg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 15%);
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color)
+  }
+    
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.subscribe-button  {
+    @include font($lh:30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--accent-color);
+    color: var(--primary-bgc-color);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-second-color);
+    color: var(--primary-bgc-color);
+  }
+}

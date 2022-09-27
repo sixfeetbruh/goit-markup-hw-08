@@ -1,0 +1,17 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    @include font(36px, 700, 42px);
+    color: var(--primary-title-color);
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+}
+
+.section-list {
+    display: flex;
+    column-gap: 30px;
+}
