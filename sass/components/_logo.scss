@@ -2,7 +2,7 @@
     @include font(26px, 700, 31px);
     font-family: var(--secondary-font);
     letter-spacing: 0.03em;
-    margin-right: 93px;
+    margin-right: 88px;
     color: var(--primary-title-color);
 }
 
@@ -10,6 +10,18 @@
     color: var(--accent-color);
 }
 
-.footer-logo {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-logo .logo {
+    margin-right: 0;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
     margin-right: 70px;
+  }
 }

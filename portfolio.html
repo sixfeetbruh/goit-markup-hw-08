@@ -38,6 +38,12 @@
                 </ul>
             </nav>
 
+            <button type="button" class="mobile-menu-button" data-menu-open>
+                <svg aria-label="Кнопка випадаючого меню" class="mobile-menu-button__icon" width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+
             <!-- navigation contact list -->
 
             <ul class="contacts list text">
@@ -59,6 +65,56 @@
                 </li>
             </ul>
         </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-button" data-menu-close>
+                    <svg aria-label="Кнопка закриття меню" class="mobile-menu__close-icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav__list list">
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav__link link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav__link link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class=" mobile-menu-nav__link link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-contacts">
+                    <ul class="mobile-menu-contacts__list list">
+                        <li class="mobile-menu-contacts__item">
+                            <a class="mobile-menu-contacts__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu-contacts__item">
+                            <a class=" mobile-menu-contacts__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-social">
+                    <ul class="mobile-menu-social__list list">
+                        <li class="mobile-menu-social__item">
+                            <a href="" class="mobile-menu-social__link link line">Instagram</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a href="" class="mobile-menu-social__link link line">Twitter</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a href="" class="mobile-menu-social__link link line">Facebook</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a href="" class="mobile-menu-social__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </header>
     
     <!-- MAIN SECTION -->
@@ -97,10 +153,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">     
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/techno.jpg"
-                                    alt="Відкритий ноутбук"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/techno-desktop.webp 1x, ././images/desktop-images/techno-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/techno-desktop.jpg 1x, ././images/desktop-images/techno-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/techno-tablet.webp 1x, ././images/tablet-images/techno-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/techno-tablet.jpg 1x, ././images/tablet-images/techno-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/techno-mobile.webp 1x, ././images/mobile-images/techno-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/techno-mobile.jpg 1x, ././images/mobile-images/techno-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/techno.jpg" alt="Відкритий ноутбук" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -118,10 +204,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/two_players.jpg"
-                                    alt="Два баскетболісти на постері"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/two_players-desktop.webp 1x, ././images/desktop-images/two_players-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/two_players-desktop.jpg 1x, ././images/desktop-images/two_players-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/two_players-tablet.webp 1x, ././images/tablet-images/two_players-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/two_players-tablet.jpg 1x, ././images/tablet-images/two_players-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/two_players-mobile.webp 1x, ././images/mobile-images/two_players-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/two_players-mobile.jpg 1x, ././images/mobile-images/two_players-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/two_players.jpg" alt="Два баскетболісти на постері" />    
+                                </picture>
+                                
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -140,10 +256,40 @@
                         
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/seafood.jpg"
-                                    alt="Логотип ресторану"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/seafood-desktop.webp 1x, ././images/desktop-images/seafood-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/seafood-desktop.jpg 1x, ././images/desktop-images/seafood-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/seafood-tablet.webp 1x, ././images/tablet-images/seafood-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/seafood-tablet.jpg 1x, ././images/tablet-images/seafood-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/seafood-mobile.webp 1x, ././images/mobile-images/seafood-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/seafood-mobile.jpg 1x, ././images/mobile-images/seafood-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/seafood.jpg" alt="Логотип ресторану" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -161,10 +307,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/headphones.jpg"
-                                    alt="Навушники"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/headphones-desktop.webp 1x, ././images/desktop-images/headphones-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/headphones-desktop.jpg 1x, ././images/desktop-images/headphones-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/headphones-tablet.webp 1x, ././images/tablet-images/headphones-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/headphones-tablet.jpg 1x, ././images/tablet-images/headphones-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/headphones-mobile.webp 1x, ././images/mobile-images/headphones-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/headphones-mobile.jpg 1x, ././images/mobile-images/headphones-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/headphones.jpg" alt="Навушники" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -182,10 +358,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/boxes.jpg"
-                                    alt="Дві коробки"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/boxes-desktop.webp 1x, ././images/desktop-images/boxes-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/boxes-desktop.jpg 1x, ././images/desktop-images/boxes-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/boxes-tablet.webp 1x, ././images/tablet-images/boxes-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/boxes-tablet.jpg 1x, ././images/tablet-images/boxes-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/boxes-mobile.webp 1x, ././images/mobile-images/boxes-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/boxes-mobile.jpg 1x, ././images/mobile-images/boxes-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/boxes.jpg" alt="Дві коробки" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -203,10 +409,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/display.jpg"
-                                    alt="Монітор"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/display-desktop.webp 1x, ././images/desktop-images/display-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/display-desktop.jpg 1x, ././images/desktop-images/display-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/display-tablet.webp 1x, ././images/tablet-images/display-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/display-tablet.jpg 1x, ././images/tablet-images/display-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/display-mobile.webp 1x, ././images/mobile-images/display-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/display-mobile.jpg 1x, ././images/mobile-images/display-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/display.jpg" alt="Монітор" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -224,10 +460,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/magazine.jpg"
-                                    alt="Відкрити журнал"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/magazine-desktop.webp 1x, ././images/desktop-images/magazine-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/magazine-desktop.jpg 1x, ././images/desktop-images/magazine-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/magazine-tablet.webp 1x, ././images/tablet-images/magazine-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/magazine-tablet.jpg 1x, ././images/tablet-images/magazine-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/magazine-mobile.webp 1x, ././images/mobile-images/magazine-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/magazine-mobile.jpg 1x, ././images/mobile-images/magazine-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/magazine.jpg" alt="Відкритий журнал" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -245,10 +511,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/label.jpg"
-                                    alt="Бирка"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/label-desktop.webp 1x, ././images/desktop-images/label-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/label-desktop.jpg 1x, ././images/desktop-images/label-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/label-tablet.webp 1x, ././images/tablet-images/label-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/label-tablet.jpg 1x, ././images/tablet-images/label-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/label-mobile.webp 1x, ././images/mobile-images/label-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/label-mobile.jpg 1x, ././images/mobile-images/label-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/label.jpg" alt="Бирка" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -266,10 +562,40 @@
                     <li class="portfolio-card__items">
                         <a href="#" class="portfolio-card__link link">
                             <div class="portfolio__overlay">
-                                <img
-                                    src="./images/growing_business.jpg"
-                                    alt="Користувач набирає щось на ноутбуці"
-                                    width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop-images/growing_business-desktop.webp 1x, ././images/desktop-images/growing_business-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/desktop-images/growing_business-desktop.jpg 1x, ././images/desktop-images/growing_business-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/tablet-images/growing_business-tablet.webp 1x, ././images/tablet-images/growing_business-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/tablet-images/growing_business-tablet.jpg 1x, ././images/tablet-images/growing_business-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                        srcset="./images/mobile-images/growing_business-mobile.webp 1x, ././images/mobile-images/growing_business-mobile@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./images/mobile-images/growing_business-mobile.jpg 1x, ././images/mobile-images/growing_business-mobile@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+
+                                    <img src="./images/growing_busgrowing_business.jpg" alt="Користувач набирає щось на ноутбуці" />    
+                                </picture>
+
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції 
                                     з різним рівнем функціоналу та сервісів. 
@@ -369,5 +695,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

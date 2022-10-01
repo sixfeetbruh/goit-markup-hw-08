@@ -1,8 +1,9 @@
 .client-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .client__link {
@@ -10,8 +11,8 @@
     justify-content: center;
     align-items: center;
     border: 1px solid currentColor;
-    width: 170px;
     height: 92px;
+    width: 100%;
     border-radius: 4px;
     color: var(--fill-social-icon);
     transition-property: color;
@@ -26,4 +27,22 @@
 
 .client__icon {
     fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .client__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc(100% / 7);
+  }
 }

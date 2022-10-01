@@ -4,7 +4,7 @@
 }
 
 .modal-form-title {
-    @include font(20px, 700, 23px);
+    @include font(20px, 700, 30px);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-title-color);
@@ -80,19 +80,19 @@
   }
 }
 
+.modal-form__field {
+  display: block;
+  position: relative;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .checkbox-block {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     justify-content: center;
-}
-
-.modal-form__field {
-    display: block;
-    position: relative;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-active {
@@ -126,7 +126,17 @@
 }
 
 .modal-rules__text {
-    @include font(14px, 400, 24px);
+    @include font(12px, 400, 14px);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-rules__text {
+    @include font(14px, 400, 24px);
+  }
+
+  .modal-form-title {
+    @include font(20px, 700, 23px);
+  }
 }
