@@ -13,10 +13,6 @@
   margin-bottom: 30px;
 }
 
-.advanteges-list__items:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .advanteges__icon {
   width: 70px;
   height: 70px;
@@ -42,6 +38,9 @@
 @media screen and (max-width: 767px) {
   .advanteges__title {
     text-align: center;
+  }
+  .advanteges-list__items:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

@@ -56,7 +56,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--primary-bgc-color);
     letter-spacing: 0.03em;
@@ -111,7 +111,6 @@
 @media screen and (max-width: 767px) {
   .filter-button-list {
     flex-wrap: wrap;
-    max-width: 326px;
     column-gap: 8px;
     row-gap: 15px;
     justify-content: flex-start;
@@ -139,5 +138,9 @@
 @media screen and (min-width: 1200px) {
   .filter-button-list {
     margin-bottom: 50px;
+  }
+
+  .portfolio-card__title {
+    width: 100%;
   }
 }

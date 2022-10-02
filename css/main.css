@@ -492,10 +492,13 @@ button {
   .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .mobile-menu-nav {
     padding-top: 48px;
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobile-menu-nav__link {
     font-size: 40px;
@@ -507,7 +510,7 @@ button {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus {
+  .mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus, .mobile-menu-nav__link:active {
     color: var(--accent-color);
   }
   .mobile-menu-nav__item {
@@ -564,6 +567,7 @@ button {
     justify-content: baseline;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   .mobile-menu-social__link {
     font-size: 18px;
@@ -596,6 +600,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu__link_current.link {
+  color: var(--accent-color);
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -634,10 +643,6 @@ button {
   }
   .link {
     color: var(--primary-title-color);
-  }
-  .menu__link_current.link {
-    color: var(--accent-color);
-    height: 100%;
   }
   .menu__link_current::after {
     content: "";
@@ -833,10 +838,6 @@ button {
   margin-bottom: 30px;
 }
 
-.advanteges-list__items:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .advanteges__icon {
   width: 70px;
   height: 70px;
@@ -862,6 +863,9 @@ button {
 @media screen and (max-width: 767px) {
   .advanteges__title {
     text-align: center;
+  }
+  .advanteges-list__items:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1178,7 +1182,7 @@ button {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--primary-bgc-color);
   letter-spacing: 0.03em;
@@ -1231,7 +1235,6 @@ button {
 @media screen and (max-width: 767px) {
   .filter-button-list {
     flex-wrap: wrap;
-    max-width: 326px;
     column-gap: 8px;
     row-gap: 15px;
     justify-content: flex-start;
@@ -1254,6 +1257,9 @@ button {
 @media screen and (min-width: 1200px) {
   .filter-button-list {
     margin-bottom: 50px;
+  }
+  .portfolio-card__title {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1199px) {
